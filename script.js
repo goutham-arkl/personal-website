@@ -1,4 +1,17 @@
+
+
+function buttonReady(){
+        
+   
+    if ($.trim($("#email").val()) === "" || $.trim($("#name").val()) === "" ||$.trim($("#subject").val()) === ""||$.trim($("#name").val()) === "") {
+        alert('you did not fill out one of the fields');
+        
+        return false;
+        
+    }
+}
 $(document).ready(function(){
+
 
     $("#submit-form").validate({
 
@@ -16,7 +29,10 @@ $(document).ready(function(){
                 required:true,
                 minlength:8 ,
                 noSpace:true  
-            }
+            },
+
+
+           
 
             
         },
@@ -36,4 +52,23 @@ $(document).ready(function(){
         }
     })
 
+
+   
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
