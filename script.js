@@ -3,7 +3,7 @@
 function buttonReady(){
         
    
-    if ($.trim($("#email").val()) === "" || $.trim($("#name").val()) === "" ||$.trim($("#subject").val()) === ""||$.trim($("#name").val()) === "") {
+    if ($.trim($("#email").val()) === "" || $.trim($("#name").val()) === "" ||$.trim($("#subject").val()) === ""||$.trim($("#message").val()) === "") {
         alert('you did not fill out one of the fields');
         
         return false;
